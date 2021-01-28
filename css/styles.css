@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+body {
+    background-color: #000;
+}
+
+.main-title {   
+    text-align: center;
+    margin-top: 100px;        
+}
+
+.main-title h1 {
+    font-size: 4rem;
+    text-shadow: 5px 5px 5px #333;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 100;
+}
+
+/* Video como fondo */
+
+.back-movie {    
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1;
+}
+
+.container {         
+    margin: 8% auto;
+    width: 50%;   
+    background-color: transparent;
+    text-align: center;
+}
+
+.boton {    
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 215, 0);;
+    border: 1px solid rgb(255, 215, 0);;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    box-shadow: 5px 5px 10px #333;
+}
+
+.boton:hover {
+    background-color: rgba(255, 215, 0, 0.8);    
+    color: #333;
+    border: 1px solid #FFF;   
+}
+
+/* Sección de CSS relativo a la segunda página */
+
+.secondary {
+    background: url("../multimedia/img/cosmos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+/* Animación marquesina */
+
+.marquesina {
+    height: 100px;
+    width: 100%;    
+}
+
+.img-marquesina {
+    height: 100px;
+}
+
+.main {
+    width: 90%;
+    margin: 5% auto;
+    text-align: center;   
+}
+
+.grid {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.card {   
+    width: 100%;
+    height: 200px;   
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    overflow: hidden;
+    background-color: #000;    
+}
+
+.card-info {   
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.2);   
+    border-radius: 10px;   
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.card-info:hover {   
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.3);    
+}
+
+.card-info h2 {
+    margin: 10% 0px;
+}
+
+.img-grid {
+    width: 100%;
+    height: 225px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    opacity: 70%;
+}
+
+
+/* Animación imágenes (Escalado) */
+
+.img-grid:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-tranform: scale(1.3);
+    -o-transform: scale(1.3);
+    opacity: 100%;   
+}
+
